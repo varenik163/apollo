@@ -1,28 +1,20 @@
+import apollo from './services/Apollo'
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import RespositorySearch from "./components/ReposotorySearch";
+import { ApolloProvider } from "react-apollo";
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
-    );
-  }
-}
+
+const App = () => (
+	<ApolloProvider client={apollo.client}>
+		<div>
+			<div style={{ textAlign: 'center' }}>
+				<h2>My first Apollo app 🚀</h2>
+			</div>
+			<RespositorySearch />
+		</div>
+	</ApolloProvider>
+);
 
 export default App;
