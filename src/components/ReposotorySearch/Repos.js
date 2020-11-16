@@ -13,7 +13,7 @@ export const Repos = ({ search }) => (
 
 			return data.search.edges.map(({ node }) => (
 				<div key={node.resourcePath}>
-					<a href={'https://github.com' + node.resourcePath}>
+					<a href={'https://github.com' + node.resourcePath} target={'_blank'}>
 						<h3>{node.name}</h3>
 					</a>
 					<small>{node.updatedAt}</small>

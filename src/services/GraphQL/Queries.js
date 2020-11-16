@@ -2,7 +2,7 @@ import gql from "graphql-tag";
 
 export const GET_REPOSITOPRIES = gql`
 	query Search($search: String!) {
-		search(query: $search, type: REPOSITORY, first: 100) {
+		search(query: $search, type: REPOSITORY, first: 10) {
 			edges {
 				node {
 					... on Repository {

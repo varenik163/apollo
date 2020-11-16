@@ -2,10 +2,10 @@ import React, { Component } from 'react'
 import { Repos } from "./Repos";
 
 const styles = {
-	display: 'flex',
+	/*display: 'flex',
 	alignItems: 'center',
 	justifyContent: 'center',
-	flexDirection: 'column'
+	flexDirection: 'column'*/
 };
 const inputStyles = {
 	padding: '10px',
@@ -31,7 +31,7 @@ class RespositorySearch extends Component {
 					onChange={ev => this.setState({ search: ev.target.value })}
 					placeholder={'Find repo'}
 				/>
-				<div>
+				<div style={{ maxWidth: '70%' }}>
 					<Repos search={this.state.search} />
 				</div>
 			</div>

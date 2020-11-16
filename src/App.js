@@ -8,12 +8,12 @@ import { ApolloProvider } from "react-apollo";
 
 const App = () => (
 	<ApolloProvider client={apollo.client}>
-		<div>
-			<div style={{ textAlign: 'center' }}>
-				<h2>My first Apollo app 🚀</h2>
+		<section style={{ padding: '30px 0 0 50px' }}>
+			<div>
+				<h2 style={{ paddingLeft: '5px' }}>My first Apollo app 🚀</h2>
 			</div>
 			<RespositorySearch />
-		</div>
+		</section>
 	</ApolloProvider>
 );
 

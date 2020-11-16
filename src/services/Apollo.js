@@ -1,6 +1,6 @@
 import ApolloClient from "apollo-boost";
 
-const gitHubToken = '2b4e25dd4f05d07ee3a4cc60baaf3507fe423771';
+const gitHubToken = 'c7047f0d3e55e252ae842a61bb7fdaebfe8b6fbd';
 const client = new ApolloClient({
 	uri: "https://api.github.com/graphql",
 	headers: {
